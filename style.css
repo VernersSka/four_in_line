@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  border-bottom: 1px solid #fff;
+  border-radius: 2px;
+  color: black;
+  margin: 5px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  border-bottom: 1px solid rgba(182, 179, 176, 0.5);
+}
+
+.game_board {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  grid-gap: 2px;
+  height: 604px;
+  width: 604px;
+  margin: 20px auto;
+}
+
+.game_board a {
+  background-color: rgb(182, 179, 176);
+  color: rgb(58, 55, 61);
+  font-size: 150px;
+  line-height: 200px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.four-in-line {
+  grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+}
+
+.four-in-line a {
+  font-size: 45px;
+  line-height: 56px;
+}
+
+.game-options {
+  display: flex;
+  justify-content: center;
+}
+
+.reset-btn,
+.bot-first-btn {
+  margin: 10px;
+  text-align: center;
+}
+
+.reset-btn a,
+.bot-first-btn a {
+  background: rgba(182, 179, 176, 0.5);
+  color: rgb(58, 55, 61);
+  margin: auto;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.reset-btn a:hover,
+.bot-first-btn a:hover {
+  background: rgb(182, 179, 176);
+}
+
+h2 {
+  text-align: center;
+}
